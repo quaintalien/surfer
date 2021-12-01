@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <title>Embedded page</title>
+    <script type="text/javascript">
+        function invokeNative() {
+            PianoSDK.postMessage('Trigger from Javascript code');
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="button" value="Click me!" style="font-size: 20px; color: red" onclick="invokeNative()"/>
+</form>
+</body>
+</html>
